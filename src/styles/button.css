@@ -1,0 +1,275 @@
+.button-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 20rem;
+  position: relative;
+  padding: 0 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
+  background-color: hsl(210deg 100% 44%);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 31ms cubic-bezier(0.5, 0.7, 0.4, 1);
+}
+
+.button-login:before {
+  content: attr(alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  opacity: 1;
+}
+
+.button-login:active {
+  box-shadow: none;
+  transform: translateY(7px);
+  transition: 35ms cubic-bezier(0.5, 0.7, 0.4, 1);
+}
+
+.button-login:hover:before {
+  transition: all 0s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.button-login i {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-style: normal;
+  transition: all 2s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.button-login:hover i {
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.button-login:hover i:nth-child(1) {
+  transition-delay: 0.045s;
+}
+
+.button-login:hover i:nth-child(2) {
+  transition-delay: calc(0.045s * 2);
+}
+
+.button-login:hover i:nth-child(3) {
+  transition-delay: calc(0.045s * 3);
+}
+
+.button-login:hover i:nth-child(4) {
+  transition-delay: calc(0.045s * 4);
+}
+
+.button-login:hover i:nth-child(6) {
+  transition-delay: calc(0.045s * 5);
+}
+
+.button-login:hover i:nth-child(7) {
+  transition-delay: calc(0.045s * 6);
+}
+
+/* /button update */
+
+/* From Uiverse.io by gharsh11032000 */
+/* From Uiverse.io by eirikvold */
+.button-main {
+  font-family: inherit;
+  font-size: 14px;
+  background: linear-gradient(to bottom, #595fd1 0%, #66a6ff 100%);
+  color: white;
+  padding: 0.8em 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.button-main:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-main:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-main span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.button-main svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.button-main .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.button-main:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button-main:hover svg {
+  transform: rotate(45deg);
+}
+
+.button-table {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  /* box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2); */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-table:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.button-table:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.button-table span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 25px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-table:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* button-tambah */
+
+.button-insert {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: #2563eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: 500;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-insert:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button-insert:hover .icon {
+  transform: translate(4px);
+}
+
+.button-insert:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button-insert::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
